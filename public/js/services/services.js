@@ -21,7 +21,7 @@ Services.service('GitHubApi', ['$http', function GitHubApi($http) {
 
   function _getRequestParams(path, isHtml) {
     var headers = {
-      Authorization: 'token e8664493df94c22ebd449436934914afb1c68a62',
+      Authorization: 'token 0e31c8598a5269421464e48f0b54c4ceca506c30',
     };
 
     if (isHtml) {

@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node server.js",
     "min": "grunt & node server.js --min",
-    "postinstall": "bower install"
+    "postinstall": "bower install & npm run min"
   },
   "dependencies": {
     "bower": "^1.8.4",
