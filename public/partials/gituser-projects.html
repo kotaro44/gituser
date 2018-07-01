@@ -1,0 +1,15 @@
+<div>
+  <div class="githubuser-header">
+  	<span class="go-back-btn" ng-click="vm.goBack()"></span>
+    <span class="title">{{::vm.userName}}'s GitHub</span>
+  </div>
+
+  <div class="scrollable-content">
+    <div class="section-title">Projects</div>
+    <div class="panel" ng-class="{'is-loading': vm.isLoading}">
+  	  <div class="project" ng-repeat="project in vm.projects" ng-click="vm.goToProject(project.name)">
+  	    <span>{{::project.name}}</span>
+  	  </div>
+    </div>
+  </div>
+</div>

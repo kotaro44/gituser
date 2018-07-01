@@ -1,0 +1,28 @@
+{
+  "name": "gitUsers",
+  "description": "Git User Demo for LeadIQ Interview",
+  "version": "1.0.0",
+  "author": {
+    "name": "Carlos Amilcar Sanchez Rosa",
+    "email": "csanchezrhn@gmail.com",
+    "url": "https://kotaro44.github.com"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "min": "grunt & node server.js --min",
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "bower": "^1.8.4",
+    "express": "^4.16.3",
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-string-replace": "^1.3.1"
+  },
+  "devDependencies": {
+    "eslint": "https://github.com/intowow/eslint.git"
+  }
+}

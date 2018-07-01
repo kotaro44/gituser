@@ -1,0 +1,12 @@
+<div>
+  <div class="githubuser-header">
+  	<span class="go-back-btn" ng-click="vm.goBack()"></span>
+    <span class="title">{{::vm.projectName}}</span>
+  </div>
+
+  <div class="scrollable-content" >
+  	<div class="loading-container" ng-if="vm.isLoading"></div>
+    <div class="section-title" ng-if="!vm.isLoading && !vm.readMe">='(<br><br>This project doesn't have a readMe.md file or the project doesn't exist... </div>
+    <div class="readme-wrapper" ng-if="vm.readMe" ng-bind-html="vm.readMe"></div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div>
+  <div class="githubuser-header">
+    <span class="title">GitHub Demo Project</span>
+  </div>
+  <div class="main-page-content">
+    <input
+      type="text"
+      class="user-name-input"
+      ng-model="vm.userName"
+      ng-change="vm.userNameChange()"
+      ng-model-options="vm.modelOpts"
+      placeholder="Enter Github Username"
+      ng-keypress="vm.keyPress($event)"
+      >
+    <span class="status-wrapper">
+      <span ng-if="!vm.untouched && vm.isLoading" class="loading"></span>
+      <span ng-if="!vm.untouched && vm.isValid && !vm.isLoading" class="check-btn tooltip" ng-click="vm.goToProjects()">
+        <span class="tooltiptext">Go to {{vm.userName}}'s projects...</span>
+      </span>
+      <span ng-if="!vm.untouched && !vm.isValid && !vm.isLoading" class="invalid tooltip">
+        <span class="tooltiptext">User not found...</span>
+      </span>
+    </span>
+  </div>
+</div>

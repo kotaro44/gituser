@@ -1,0 +1,6 @@
+node_modules/*
+bower_components/*
+i18n/node_modules/*
+dist/*
+app/src/i18n/constants/*
+app/src/common/third-parties/*

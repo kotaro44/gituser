@@ -1,0 +1,62 @@
+{
+  "globals": {
+    "window": true,
+    "angular": true,
+    "swal": true,
+    "$": true,
+    "_": true,
+    "Promise": true,
+    "moment": true,
+    "Highcharts": true,
+    "sweetAlert": true,
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "ce-nl-else": "error",
+    "ce-too-many-spaces": "error",
+    "ce-no-arguments-var": "error",
+    "ce-no-leading-commas": "error",
+    "ce-one-space-before-parenthesis": "error",
+    "ce-one-var-per-dec": "error",
+    "ce-single-line-comment": "error",
+    "ce-undef-dec-last": "error",
+    "ce-valid-block-comment": "error",
+    "key-spacing": ["error", { "beforeColon": false }],
+    "quotes": ["error", "single"],
+    "eqeqeq": "error",
+    "curly": "error",
+    "no-undef": "error",
+    "semi": "error",
+    "block-scoped-var": "error",
+    "strict": "error",
+    "no-sequences": "error",
+    "indent": ["error", 2, {
+        "SwitchCase": 1,
+    }],
+    "space-before-blocks": "error",
+    "valid-jsdoc": "error",
+    "eol-last": "error",
+    "switch-colon-spacing": ["error", {"after": true, "before": false}],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "comma-dangle": ["error",{
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always",
+        "exports": "always",
+        "functions": "never"
+    }],
+    "vars-on-top": "error",
+    "id-length": "error",
+    "dot-notation": "error",
+    "func-names": "error",
+    "no-unused-vars": "error",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "if" , "next": "*" },
+      { "blankLine": "always", "prev": "directive" , "next": "*" }
+    ]
+  }
+}
