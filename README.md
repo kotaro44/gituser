@@ -1,21 +1,23 @@
 # GitHub User
-## by: Carlos A. Sanchez Rosa
-## Email: csanchezrhn@gmail.com
-## https://kotaro44.github.com
+### by: Carlos A. Sanchez Rosa
+#### Email: csanchezrhn@gmail.com
+#### https://kotaro44.github.com
 
-To Run this project
+To Run this project after cloning project run the command:
+```
+$ npm install
+```
 
-1) clone project
-2) run command: npm install
+`npm install` command will deploy the minified website in the host machine using port 80 by default, it will create a dist folder with the minified version of the website.
 
-npm install will deploy the minified website in the host machine using port 80
+To Run Development Unminified version:
+```
+$ npm start
+```
 
-To Run Development version:
-1) npm start
+`npm start` will run the website in the host machine using port 80 by default.
 
-npm start will run the website in the host machine using port 80
-
-To Run the minified version again:
-1) npm run min
-
-
+Generate and Run the minified version again:
+```
+$ npm run min
+```

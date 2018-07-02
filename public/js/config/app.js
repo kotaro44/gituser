@@ -4,9 +4,7 @@
 angular.module('gituser', [
   'ngSanitize',
   'ngRoute',
-  'gituser.filters',
   'gituser.services',
-  'gituser.directives',
   'gituser.controllers',
 ]).config(['$routeProvider', '$locationProvider', function routePRovider($routeProvider, $locationProvider) {
   $routeProvider

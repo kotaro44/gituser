@@ -5,11 +5,7 @@
  */
 var Services = angular.module('gituser.services', []);
 
-window.getService = function getService(service) {
-  return angular.element('body').injector().get(service);
-};
-
-Services.service('GitHubApi', ['$http', function GitHubApi($http) {
+Services.service('GitHubApi', ['$http', '$window', function GitHubApi($http, $window) {
   var GitHubApi = {
   	location: 'https://api.github.com/',
     getUserData: _getUserData,
@@ -64,6 +60,15 @@ Services.service('GitHubApi', ['$http', function GitHubApi($http) {
 
   function _request(url, isHtml) {
     return $http(GitHubApi.getRequestParams(url, isHtml));
+  };
+
+  function _request(url, isHtml) {
+    return $http(GitHubApi.getRequestParams(url, isHtml)).catch(function onError(error) {
+      if (error.status === 401 && error.statusText === 'Unauthorized') {
+        alert('the github api token ahd expired.');
+        $window.location = '/';
+      }
+    });
   };
 
   return GitHubApi;

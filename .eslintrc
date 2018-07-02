@@ -9,6 +9,10 @@
     "moment": true,
     "Highcharts": true,
     "sweetAlert": true,
+    "Controllers": true,
+    "Services": true,
+    "Directives": true,
+    "Filters": true,
   },
   "env": {
     "browser": true,
